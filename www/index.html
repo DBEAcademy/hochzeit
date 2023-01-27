@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hochzeit von A und B</title>
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" href="resources/styles/main.css">
+
+
+  </head>
+  <style>
+  #btn_burgernav, #btn_close{
+  	display:none;
+  		padding:10px;
+  }
+  @media (max-width: 800px) {
+  
+    #btn_burgernav{
+  		display:inline-block;
+  		float:right;
+  	}
+  	header nav ul {
+  		display:none;
+  	}
+  	header nav ul li {
+  		padding:15px;
+  	}
+  }
+  header nav.show #btn_close{
+ 	display: block;
+    z-index: 2;
+    position: absolute;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px;
+    color:#bc5121;
+    
+  }
+  header nav.show ul{
+ 	display: block;
+    width: 100vW;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    background: #FFF;
+    height: 100vH;
+    top: 0;
+    padding: 30px 10px;
+  }
+  </style>
+  <body>
+    <!-- header Bereich -->  
+    <header>
+        <img id="logo" src="resources/images/logo.svg" alt="Diamant zu sehen" title="Logo für die Hochzeit" width="150">
+        <nav id="mynav">
+       		<span id="btn_burgernav">
+        	<svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">
+        	<path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/>
+        	</svg>
+    		</span>
+    		<a href="#" id="btn_close">x</a>
+            <ul>
+                <li><a href="?ablauf#ablauf">Ablauf</a></li>
+                <li><a href="?location#location">Location</a></li>
+                <li><a href="?anmeldung#anmeldung">An/Abmeldung</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+const closebutton = document.getElementById("btn_close");
+const button = document.getElementById("btn_burgernav");
+const nav = document.getElementById("mynav");
+
+button.addEventListener('click', () => {
+  nav.classList.toggle('show');
+});
+closebutton.addEventListener('click', () => {
+  nav.classList.toggle('show');
+});
+
+</script>
+     <!-- Hero Bereich -->  
+    <div id="hero">
+        <h1>Unsere Hochzeit</h1>
+    </div>
+
+
+     <!-- Header Bereich -->  
+    <main>
+     
+        <h2 id="ablauf">Ablauf am 1. August 2021</h2> 
+        <p> Unsere Hochzeit findet am 1. August 2021 in der Stadt Kappelrodeck (im Ortenaukreis in Baden-Württemberg) statt. 
+            Sowohl die Trauung als auch die Feier wird in diesem schönen Weinort, welcher im Nordschwarzwald liegt, stattfinden. 
+            Die Trauung findet im <a href="https://goo.gl/maps/wm5KDAtFGF8dczEi9" target="_blank">Zuckerbergschloss</a> statt und die
+            Feier im <a href="https://g.page/Gruppenhaus-VayaCasa?share" target="_blank">Vaya Casa</a>.
+            </p>
+        <p>
+Dieser Ablauf wird sich noch minimal <b>ändern</b>.
+
+        </p>
+        <table>
+            <tr> 
+                <th>10:00</th>
+                <td>
+                        <b>Standesamtliche Trauung</b><br>
+                        Wir lassen uns im (<a href="https://goo.gl/maps/wm5KDAtFGF8dczEi9" target="_blank">Zuckerbergschloss</a>) trauen.<br>
+                </td>
+            </tr>
+            <tr> 
+                <th>11:00</th>
+                <td>
+                        <b>Gratulationen & Sektempfang</b><br>
+                        inkl. Paarshooting und Gruppenfotos
+                       
+                </td>
+            </tr>
+            <tr>  
+                <th>12:00</th>
+                <td> <b>Mittagessen</b>
+                    <br>
+                        Im <a href="https://g.page/Gruppenhaus-VayaCasa?share" target="_blank">Vaya Casa</a> werden wir den restlichen Tag verbringen.
+                        
+                        </td>
+            </tr>
+            <tr>  
+                <th>13:00</th>
+                <td><b>Ruhephase</b><br>
+                        Schlafenszeit für die Kinder<br>Spiele<br> und verschiedene Nachmittagsaktionen
+                        </td>
+            </tr>
+            <tr>  
+                <th>15:00</th>
+                <td> Kaffee und Kuchen in der Location  </td>
+                        
+            </tr>
+            <tr>  
+                <th>18:00</th>
+                <td><b>Abendessen</b></td>
+            </tr>
+
+
+        </table>
+        
+    
+ <h2 id="Nachmittagsaktionen">Nachmittagsaktionen</h2>
+
+<p>
+	Wer Ideen oder Vorschläge zu Nachmittagsaktionen hat, der kann sich gerne bei der Trauzeugin (‭Telefonnummer auf der Einladung) melden.
+
+</p>
+        <h2 id="location">Anfahrt</h2>
+
+ <div class="kachel">       
+<b>Trauung</b>
+
+<img src="/resources/images/9f0cb3_8db0f1aa05704541b50fd925dd1af147_mv2.jpg" >
+
+<address>
+    Café-Restaurant Zuckerbergschloß<br>
+
+    Grüner Winkel 60
+    <br>77876 Kappelrodeck
+
+</address>
+<br><a href="https://goo.gl/maps/oC3rxQmyRX2jzFno6" target="_blank">Google Maps</a>
+</div>
+ <div class="kachel">  
+<br><br>
+<b>Hochzeitsfeier</b>
+<img src="/resources/images/1590336250.jpg">
+        <address>Vaya Casa
+<br>
+Herrenstraße 5a,<br> 77876 Kappelrodeck
+
+    </address>
+    <br><a href="https://g.page/Gruppenhaus-VayaCasa?share" target="_blank">Google Maps</a>
+
+    </div>
+
+<h2 id="anmeldung">Wichtige Fragen</h2>
+
+        <form method="POST" action="anml.php">
+             <label>Dein Name: <input name="frm_username" type="text" value=""></label>
+            <label>Kommst du zu unserer Hochzeit?:  
+                                    <select name="frm_kommtstatus">
+                                        <option>-</option>
+                                        <option>Ja, ich werde erscheinen</option>
+                                        <option>Nein, ich werde nicht erscheinen</option>
+                                    </select>
+                                    <br></label>
+            <label>Kommst du in Begleitung?:  
+                
+                <select name="frm_kommtstatus">
+                    <option>-</option>
+                    <option>Ja</option>
+                    <option>Nein, nur ich komme</option>
+                </select>
+            </label><br>
+            <label>Wer kommt mit dir mit?</label>
+                Name: <input name="begleitung_name[]"> 
+                <div id="newPerson"></div>
+                <a href="javascript:newPerson()">weitere Person hinzufügen </a>
+
+
+                <br><br>
+           <!-- <label>Benötigst du eine Übernachtung?
+             
+            <select name="frm_kommtstatus">
+                <option>-</option>
+                <option>Ja</option>
+                <option>Nein</option>
+            </select></label><br>-->
+
+            <label>Wichtiges was wir beim Essen beachten: 
+                <textarea name="wichtigessen" placeholder="Allergien, Vegetarisch,.."></textarea>
+                <br>
+                                    
+
+            <input type="submit" value="absenden">
+        </form>
+        
+    </main>
+    <footer>
+        <ul>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+    </footer>
+    <link rel="stylesheet" href="resources/styles/main-non-critical.css">
+<script>
+    var ct = 1;
+    function newPerson()
+    {
+        ct++;
+        var div1 = document.createElement('div');
+        div1.id = ct;
+        // link to delete extended form elements
+        var delLink = '<a href="javascript:delIt('+ ct +')">löschen</a>';
+        div1.innerHTML = '<div>Name: <input name="begleitung_name[]"> ' + delLink + '</div>';
+        document.getElementById('newPerson').appendChild(div1);
+    }
+    // function to delete the newly added set of elements
+    function delIt(eleId)
+    {
+        d = document;
+        var ele = d.getElementById(eleId);
+        var parentEle = d.getElementById('newPerson');
+        parentEle.removeChild(ele);
+    }
+</script>    
+<script>
+    var headermenu = document.querySelector("header");
+    window.addEventListener('scroll', function(){
+        if(window.pageYOffset >= 10){
+            headermenu.className = 'hidden';
+        }else {
+            headermenu.className = '';
+        }
+    });
+</script>
+  </body>
+</html>

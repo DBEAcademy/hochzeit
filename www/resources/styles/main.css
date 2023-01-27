@@ -1,0 +1,151 @@
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto/roboto-v30-latin-300.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto/roboto-v30-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto/roboto-v30-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto/roboto-v30-latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto/roboto-v30-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto/roboto-v30-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto/roboto-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto/roboto-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+  /* roboto-500 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto/roboto-v30-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/roboto/roboto-v30-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto/roboto-v30-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto/roboto-v30-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto/roboto-v30-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto/roboto-v30-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+
+/* Reset */
+*{
+	font-family: 'Roboto', sans-serif;
+	
+    font-weight: 400;
+}
+body{
+  padding:0px;
+  margin:0px;
+}
+header ul{
+  list-style-type: none;
+  padding:0px;
+  margin:0px;
+}
+video,img{
+  max-width: 100%;
+}
+h1{
+  margin:0px;
+}
+
+th{
+	vertical-align: top;
+	padding:0px 5px;
+}
+
+
+/* Header */
+
+header {
+  background-color: transparent;
+  display: flex;
+  position:fixed; 
+  top:0;
+  width:100%;
+    justify-content: space-between;
+    align-items: center;
+	transition: all 0.5s linear;
+	z-index: 20;
+
+}
+header.hidden{
+  background-color: #f6f6f6;
+}
+#logo {
+  
+    padding: 20px;
+    height: 47px;
+
+}
+
+header nav ul {
+  display: flex;
+
+}
+header nav ul li{
+  flex:1;
+
+}
+header nav ul li a{
+  padding:15px;
+  font-size: 20px;
+  color:#004a55;
+
+}
+header nav ul li a:hover {
+  border-bottom: 2px solid #004a55;
+}
+
+
+/* Hero */
+#hero{
+  	background-image: url('../images/hero-hochzeitspaar.jpg');
+    height: 60vH;
+    background-size: cover;
+    background-position: center;
+    width: 100vW;
+}
+#hero h1 {
+  background: rgb(0 74 85 / 48%);
+    color: #fff;
+    padding: 20px;
+    padding-right: 50px;
+    text-align: right;
+    top: 29vH;
+    position: relative;
+    font-size: 72px;
+    font-weight: 400;
+}
+
+/* Main */
+main {
+	margin: 35px;
+}
+ .kachel img{
+ 	width:200px;
+ 	float:right;
+ }
+.kachel{
+  clear:both;
+  max-width:700px;
+}
+select,textarea,input{
+	padding:5px;
+}
+select, label,textarea{
+	cleaR:both;
+    display: block;
+    width:100%;
+}
